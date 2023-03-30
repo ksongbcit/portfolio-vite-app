@@ -1,42 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-container {
+  background-color: rgb(209, 218, 225);
+  border-radius: 10px;
+  margin: 5vw;
+  padding: 5vw;
+  width: 80vw;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-container {}
+
+.top-bar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.top-bar-container img {
+  padding: 10px 20px;
 }
 
-.card {
-  padding: 2em;
+.text-card-container {
+  padding: 5px;
+  margin: auto;
 }
 
-.read-the-docs {
-  color: #888;
+.text-card-text-body {
+  font-size: 12px;
+
+}
+
+.image-card-container {
+  padding: 10px 30px;
 }
