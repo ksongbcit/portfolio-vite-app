@@ -1,6 +1,6 @@
 function BotBar() {
     return (
-        <div>BotBar</div>
+        <div className="bot-bar-container"> BotBar</div >
     )
 }
 export default BotBar

@@ -1,9 +1,9 @@
 import './App.css'
 import logo from './assets/cpu-logo.svg'
 import person_boy from './assets/person-boy.svg'
+import grad_hat from './assets/grad-hat.svg'
 
 import BotBar from './components/BotBar'
-import CardContainer from './components/CardContainer'
 import ImageCard from './components/ImageCard'
 import MainContainer from './components/MainContainer'
 import TextCard from './components/TextCard'
@@ -17,27 +17,42 @@ function App() {
 
         <TopBar logo={logo} title="Portfolio Home" />
 
-        <CardContainer>
+        <div id="intro" className="">
           <ImageCard
-            image_file={person_boy} />
+            image_file={person_boy}
+            width="70px"
+            alt_name="profile_image" />
           <TextCard
             title="title text"
             text_body="text body" />
-        </CardContainer>
+        </div>
 
-        <CardContainer>
+        <div id="skills" className="">
           <ImageCard
-            image_file={person_boy} />
+            image_file={person_boy}
+            width="40px"
+            alt_name="skills_section" />
           <TextCard title="title text"
             text_body="text body" />
           <TextCard title="title text"
             text_body="text body" />
-        </CardContainer>
+        </div>
 
-        <CardContainer>
+        <div id="education" className="">
+          <ImageCard
+            image_file={grad_hat}
+            width="40px"
+            alt_name="skills_section" />
           <TextCard title="title text"
             text_body="text body" />
-        </CardContainer>
+          <TextCard title="title text"
+            text_body="text body" />
+        </div>
+
+        <div className="">
+          <TextCard title="title text"
+            text_body="text body" />
+        </div>
 
         <BotBar />
 
