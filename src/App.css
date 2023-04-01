@@ -1,7 +1,28 @@
-body {
+:root {
+  /* colors */
+  --color-light-blue: hsl(206, 21%, 85%);
+  --color-light-azure: hsl(200, 89%, 89%);
+  --color-light-navy: hsl(210, 32%, 61%);
+  --color-dark-navy: hsl(212, 44%, 34%);
+  --color-light-green: hsl(137, 71%, 80%);
+  --color-light-purple: hsl(222, 46%, 54%);
+  --color-dark-green: hsl(183, 48%, 33%);
+  --color-dark-gray: hsl(193, 17%, 40%);
+  --color-light-gray: hsl(193, 17%, 70%);
+
+  /* font */
   font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: var(--color-dark-navy);
   margin: 0;
   overflow: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -9,27 +30,30 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+.app-container {
+  background-color: var(--color-light-blue);
+  border-radius: 10px;
+  margin: 3vw 15vw;
+  padding: 5vw 2vw;
+  width: auto;
+  box-shadow: 0 0 10px 3px var(--color-light-gray);
 }
 
-.main-container {
-  background-color: rgb(209, 218, 225);
-  border-radius: 10px;
-  margin: 3vw 10vw;
-  padding: 2vw;
-  width: 74vw;
-  box-shadow: 0 0 10px 5px #9c9c9c;
+.body-container {
+  margin: 2vw;
 }
 
 .grid-container {
+  height: 200px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .top-bar-container {
@@ -37,30 +61,38 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .top-bar-container img {
-  padding: 10px 20px;
+  padding: 0 3em;
 }
 
-.text-card-container {
+.text-card-container,
+h4 {
   padding: 5px;
-  margin: auto;
+  margin: 0;
 }
 
 .text-card-text-body {
   font-size: 12px;
-
+  margin: 0;
 }
 
 .image-card-container {
   padding: 30px;
 }
 
-
 .bot-bar-container {
-  height: 10vw;
-  background-color: antiquewhite;
+  height: auto
+}
+
+.bot-bar-links {
+  text-align: center;
+  padding: 0;
+}
+
+.bot-bar-links li {
+  display: inline-block;
+  padding: 0 10px;
+
 }
